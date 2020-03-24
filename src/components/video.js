@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 
 export default ({ src }) => {
     return (
@@ -19,9 +20,9 @@ export default ({ src }) => {
                 objectFit: 'fill',
                 objectPosition: 'center'
             }}
-            src={src}
+            src={withPrefix(src)}
         >
-            <source src={src} type="video/mp4" />
+            <source src={withPrefix(src)} type="video/mp4" />
             Your device does not support playing 'video/mp4' videos
         </video>
     )
