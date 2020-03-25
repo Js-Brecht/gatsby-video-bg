@@ -16,7 +16,6 @@ export default ({ src }) => {
                 height: '100%',
                 width: '100%',
                 zIndex: '-1',
-                contain: 'cover',
                 objectFit: 'fill',
                 objectPosition: 'center'
             }}
